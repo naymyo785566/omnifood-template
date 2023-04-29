@@ -98,7 +98,8 @@
   }
   .main-nav {
     position: absolute;
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
     top: 0;
     left: 0;
     width: 100%;
@@ -124,6 +125,10 @@
   }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
   }
   .main-nav-list {
     flex-direction: column;
